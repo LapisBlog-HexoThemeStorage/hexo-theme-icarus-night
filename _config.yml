@@ -31,7 +31,7 @@ navbar:
     links:
         Admin:
             icon: fas fa-cog
-            url: 'https://imaegoo.cn-e1.leanapp.cn'
+            url: 'https://www2.imaegoo.com'
 # Footer section link settings
 footer:
     # Links to be shown on the right of the footer section
