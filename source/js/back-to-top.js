@@ -55,7 +55,7 @@ $(document).ready(function () {
             return;
         }
         $button.attr('class', state.classname);
-        for (let prop in state) {
+        for (var prop in state) {
             if (prop === 'classname') {
                 continue;
             }
