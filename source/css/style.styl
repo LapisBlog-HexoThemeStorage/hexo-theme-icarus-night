@@ -5,10 +5,10 @@ screen-tablet = 769px
 screen-desktop = 1088px
 screen-widescreen = 1280px
 screen-fullhd = 1472px
-primary-color = rgb(100,100,200)
-primary-color-hover = rgb(90,90,180)
-primary-color-active = rgb(80,80,160)
-primary-color-light = rgba(100,100,200,0.8)
+primary-color = rgb(200,0,50)
+primary-color-hover = rgb(180,0,40)
+primary-color-active = rgb(160,0,30)
+primary-color-light = rgba(200,0,50,0.8)
 
 /* ---------------------------------
  *       Override CSS Framework
@@ -472,38 +472,30 @@ figure.highlight
 * --------------------------------- */
 
 // Background image
-body, .navbar .blur-bg, .footer .blur-bg
-    background-image: url("https://cdn.imaegoo.com/bg4.jpg")
+body
+    background-color: transparent
+body:before
+    content: ''
+    position: fixed
+    z-index: -1
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: url("/images/bg2.jpg") center 0 no-repeat
     background-size: cover
-    background-repeat: no-repeat
-    background-attachment: fixed
-    background-position: center
-body .navbar, body .footer
-    position: relative
-    .blur-bg, .nav-mask
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-    .blur-bg
-        -webkit-filter: blur(20px)
-        -moz-filter: blur(20px)
-        -ms-filter: blur(20px)
-        -o-filter: blur(20px)
-        filter: blur(20px)
-    .nav-mask
-        background-color: rgba(255,255,255,0.7)
-    .container .navbar-menu
-        background-color: inherit
-@media screen and (max-width: screen-tablet - 1)
-    body, .navbar .blur-bg, .footer .blur-bg
-        background-image: none
-    .card
-        background-color: white
+    @media screen and (max-width: screen-tablet - 1)
+        background: url("/images/bg6s.jpg") center 0 no-repeat
 
 // Nav bar fixes
+.navbar, .footer
+    background-color: rgba(255,255,255,0.9)
 .navbar-main
+    .navbar-menu
+        transition: background-color 0.5s ease
+        background-color: transparent
+        &:hover
+            background-color: rgba(255,255,255,1)
     .navbar-item
         &.is-active
             color: inherit
@@ -517,17 +509,16 @@ body .navbar, body .footer
 
 // Card fixes
 .card
+    transition: background-color 0.5s ease
+    background-color: rgba(255,255,255,0.9)
+    &:hover
+        background-color: rgba(255,255,255,1)
     &.card-transparent
         background-color: transparent !important
         .level-start,
         .level-end
             overflow: hidden
 @media screen and (min-width: screen-tablet)
-    .card
-        transition: background-color 0.5s ease
-        background-color: rgba(255,255,255,0.9)
-        &:hover
-            background-color: rgba(255,255,255,1)
     .column-main,
     .column-left,
     .column-right,

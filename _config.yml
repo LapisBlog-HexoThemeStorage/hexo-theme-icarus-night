@@ -5,7 +5,7 @@ favicon: /favicon.ico
 # Path or URL to RSS atom.xml
 rss: /atom.xml
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
-logo: https://cdn.imaegoo.com/logo.png
+logo: /images/logo.png
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
 open_graph:
@@ -82,12 +82,12 @@ donate:
         # Donation entry name
         type: alipay
         # Qrcode image URL
-        qrcode: 'https://cdn.imaegoo.com/alipay.jpg'
+        qrcode: '/images/alipay.jpg'
     -
         # Donation entry name
         type: wechat
         # Qrcode image URL
-        qrcode: 'https://cdn.imaegoo.com/wechat.png'
+        qrcode: '/images/wechat.png'
 # Share plugin settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins
 share:
