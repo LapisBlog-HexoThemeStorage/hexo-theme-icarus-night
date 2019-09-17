@@ -165,7 +165,6 @@ widgets:
         # Links to be shown in the links widget
         links:
             maemoの風船が！: 'https://maemo.cc/'
-            神代綺凜: 'https://moe.best/'
     -
         # Widget name
         type: toc
