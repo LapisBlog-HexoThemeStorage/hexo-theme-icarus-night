@@ -5,10 +5,11 @@ screen-tablet = 769px
 screen-desktop = 1088px
 screen-widescreen = 1280px
 screen-fullhd = 1472px
-primary-color = rgb(68,155,255)
-primary-color-hover = rgb(26,133,255)
-primary-color-active = rgb(0,119,255)
-primary-color-light = rgba(68,155,255,0.8)
+primary-color = rgb(66,66,66)
+primary-color-hover = rgb(88,88,88)
+primary-color-active = rgb(44,44,44)
+primary-color-light = rgba(66,66,66,0.8)
+link-color = rgb(68,155,255)
 
 /* ---------------------------------
  *       Override CSS Framework
@@ -549,7 +550,7 @@ body:before
 
 // Colors
 a
-    color: primary-color
+    color: link-color
 
 .ins-section-container .ins-section .ins-search-item:hover,
 .ins-section-container .ins-section .ins-search-item.active
@@ -560,8 +561,21 @@ a
 
 .has-link-grey,
 .has-link-black-ter
+    position: relative
+    &:after
+        content: ''
+        width: 0
+        height: 1px
+        background-color: primary-color
+        position: absolute
+        top: 100%
+        margin-top: 2px
+        left: 0
+        transition: all .2s ease
     &:hover
         color: primary-color !important
+        &:after
+            width: 100%
 
 .searchbox .searchbox-container .searchbox-input-wrapper .searchbox-close:hover
     color: primary-color-hover
