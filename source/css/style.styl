@@ -5,10 +5,10 @@ screen-tablet = 769px
 screen-desktop = 1088px
 screen-widescreen = 1280px
 screen-fullhd = 1472px
-primary-color = rgb(255,90,90)
-primary-color-hover = rgb(240,80,80)
-primary-color-active = rgb(220,70,70)
-primary-color-light = rgba(220,70,70,0.8)
+primary-color = rgb(68,155,255)
+primary-color-hover = rgb(26,133,255)
+primary-color-active = rgb(0,119,255)
+primary-color-light = rgba(68,155,255,0.8)
 
 /* ---------------------------------
  *       Override CSS Framework
@@ -482,14 +482,16 @@ body:before
     right: 0
     bottom: 0
     left: 0
-    background: url("/images/bg9.jpg") center 0 no-repeat
+    background: url("/images/bg11.jpg") center 0 no-repeat
     background-size: cover
     @media screen and (max-width: screen-tablet - 1)
         background-image: url("/images/bg9.jpg")
 
 // Nav bar fixes
 .navbar, .footer
-    background-color: rgba(255,255,255,0.9)
+    background-color: rgba(255,255,255,0.8)
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
 .navbar-main
     .navbar-menu
         background-color: transparent
