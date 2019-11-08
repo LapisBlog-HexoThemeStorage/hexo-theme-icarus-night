@@ -197,7 +197,7 @@
                 this._context.globalAlpha = this._options.colorAlpha;
 
                 window.addEventListener("resize", this._onResize);
-                window.addEventListener("scroll", this._onScroll);
+                // 注释，防止背景随页面滚动 window.addEventListener("scroll", this._onScroll);
                 document.body.appendChild(this._canvas);
             } catch (e) {
                 console.warn("Canvas Context Error: " + e.toString());
