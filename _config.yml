@@ -60,6 +60,8 @@ article:
     thumbnail: true
     # Whether to show estimate article reading time
     readtime: true
+    # Whether to show article edit time
+    updated: true
 # Search plugin settings
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Search-Plugins
 search:
