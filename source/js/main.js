@@ -107,7 +107,7 @@
             columnLeft.style.top = null;
         } else {
             if (columnLeft) {
-                columnLeft.style.top = $(window).height() - columnLeft.scrollHeight - 20 + 'px';
+                columnLeft.style.top = $(window).height() - columnLeft.scrollHeight - 10 + 'px';
             } else {
                 setTimeout(function () {
                     columnLeft = $('.column-left')[0];

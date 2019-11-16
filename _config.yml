@@ -168,6 +168,7 @@ widgets:
         links:
             maemoの風船が！: 'https://maemo.cc/'
             刘向洋的博客: 'https://liuxiangyang.space/'
+            米米的博客: 'https://zhangshuqiao.org'
     -
         # Widget name
         type: toc
