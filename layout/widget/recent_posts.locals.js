@@ -5,7 +5,7 @@ module.exports = (ctx, locals) => {
         return null;
     }
     const thumbnail = !has_config('article.thumbnail') || get_config('article.thumbnail') !== false;
-    const _posts = posts.sort('date', -1).limit(6).map(post => ({
+    const _posts = posts.sort('date', -1).limit(5).map(post => ({
         link: post.link,
         path: post.path,
         title: post.title,

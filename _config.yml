@@ -179,6 +179,12 @@ widgets:
         type: recent_posts
         # Where should the widget be placed, left or right
         position: right
+    -
+        # Widget name
+        type: subscribe_email
+        feedburner_id: imaegoo
+        description: Powered by Google feedburner
+        position: right
 # Other plugin settings
 plugins:
     # Enable page animations

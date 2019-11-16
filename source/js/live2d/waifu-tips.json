@@ -53,6 +53,7 @@
         { "selector": "#toc", "text": ["翻页比较麻烦吗，点击可以跳转章节呢"] },
         { "selector": "#back-to-top", "text": ["回到开始的地方吧"] },
         { "selector": "#widget-follow", "text": ["并没有什么值得关注的东西"] },
+        { "selector": "#subscribe-email", "text": ["现在就订阅，新知不漏接"] },
 
         { "selector": ".search", "text": ["找不到想看的内容？搜索看看吧"] },
         { "selector": ".copy", "text": ["点击快速复制代码"] },
