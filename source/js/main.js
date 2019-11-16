@@ -98,10 +98,10 @@
      *        www.imaegoo.com
      * --------------------------------- */
 
-     // 仿 CSDN 左侧栏吸底效果，设置 position 为 sticky，top 为屏幕高度减去左侧栏高度，比 CSDN 的实现更简洁。
-     var columnLeft = $('.column-left')[0];
+    // 仿 CSDN 左侧栏吸底效果，设置 position 为 sticky，top 为屏幕高度减去左侧栏高度，比 CSDN 的实现更简洁。
+    var columnLeft = $('.column-left')[0];
 
-     function fixLeftColumnTop() {
+    function fixLeftColumnTop() {
         // if SBP return
         if ($(window).width() < 769) {
             columnLeft.style.top = null;
