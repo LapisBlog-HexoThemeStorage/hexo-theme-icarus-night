@@ -5,10 +5,11 @@ screen-tablet = 769px
 screen-desktop = 1088px
 screen-widescreen = 1280px
 screen-fullhd = 1472px
-primary-color = rgb(66,66,66)
-primary-color-hover = rgb(88,88,88)
-primary-color-active = rgb(44,44,44)
-primary-color-light = rgba(66,66,66,0.8)
+screen-onek = 1700px
+primary-color = #5d93db
+primary-color-hover = #71a1e0
+primary-color-active = #4382d6
+primary-color-light = rgb(93, 147, 219, 0.8)
 link-color = rgb(68,155,255)
 
 /* ---------------------------------
@@ -474,6 +475,15 @@ figure.highlight
  *        www.imaegoo.com
  * --------------------------------- */
 
+@media screen and (min-width: screen-onek)
+    .container
+        max-width: 1600px
+        width: 1600px
+        .column.is-3-widescreen
+            width: 23%
+        .column.is-6-widescreen
+            width: 54%
+
 // Background image
 body
     background-color: transparent
@@ -512,7 +522,7 @@ body:before
 // Card fixes
 .card
     transition: background-color 0.5s ease
-    background-color: rgba(255,255,255,0.9)
+    background-color: rgba(255,255,255,0.95)
     &:hover
         background-color: rgba(255,255,255,1)
     &.card-transparent

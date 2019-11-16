@@ -101,8 +101,8 @@
 <% } %>
 
 <% if (!index && (post.prev || post.next)) { %>
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
+<div class="card">
+    <div class="level post-navigation is-flex-wrap is-mobile card-content">
         <% if (post.prev){ %>
         <div class="level-start">
             <a class="level level-item has-link-grey <%= !post.prev ? 'is-hidden-mobile' : '' %> article-nav-prev" href="<%- url_for(post.prev.path) %>">
