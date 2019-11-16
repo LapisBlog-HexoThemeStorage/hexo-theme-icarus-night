@@ -169,6 +169,7 @@ widgets:
             maemoの風船が！: 'https://maemo.cc/'
             刘向洋的博客: 'https://liuxiangyang.space/'
             米米的博客: 'https://zhangshuqiao.org'
+            辣椒の酱: 'https://removeif.github.io'
     -
         # Widget name
         type: toc
