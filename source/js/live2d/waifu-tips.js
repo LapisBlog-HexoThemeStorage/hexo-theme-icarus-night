@@ -192,7 +192,8 @@ function initModel(waifuPath, type) {
     } loadModel(modelId, modelTexturesId);
 }
 
-function loadModel(modelId, modelTexturesId=0) {
+function loadModel(modelId, modelTexturesId) {
+    if (!modelTexturesId) modelTexturesId = 0;
     if (live2d_settings.modelStorage) {
         localStorage.setItem('modelId', modelId);
         localStorage.setItem('modelTexturesId', modelTexturesId);
