@@ -4,6 +4,10 @@
     <%- _partial('common/head') %>
 </head>
 <body class="is-<%= column_count() %>-column">
+    <script type="text/javascript" src="/js/night.js"></script>
+    <canvas id="universe"></canvas>
+    <!-- ↑ www.imaegoo.com ↑ -->
+
     <%- _partial('common/navbar') %>
     <% function main_column_class() {
         switch (column_count()) {
@@ -32,7 +36,8 @@
     <%- _partial('search/' + get_config('search.type')) %>
     <% } %>
 
-    <!-- www.imaegoo.com -->
+    <!-- ↓ www.imaegoo.com ↓ -->
+    <script type="text/javascript" src="/js/universe.js"></script>
     <script type="text/javascript" src="/js/live2d/autoload.js"></script>
 </body>
 </html>

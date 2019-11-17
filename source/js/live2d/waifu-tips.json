@@ -54,6 +54,7 @@
         { "selector": "#back-to-top", "text": ["回到开始的地方吧"] },
         { "selector": "#widget-follow", "text": ["并没有什么值得关注的东西"] },
         { "selector": "#subscribe-email", "text": ["现在就订阅，新知不漏接"] },
+        { "selector": "#night-nav", "text": ["晚上请使用夜间模式保护视力哟"] },
 
         { "selector": ".search", "text": ["找不到想看的内容？搜索看看吧"] },
         { "selector": ".copy", "text": ["点击快速复制代码"] },

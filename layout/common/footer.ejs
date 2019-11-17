@@ -1,6 +1,4 @@
 <footer class="footer">
-    <div class="blur-bg"></div>
-    <div class="nav-mask"></div>
     <div class="container">
         <div class="level">
             <div class="level-start has-text-centered-mobile">
@@ -8,7 +6,8 @@
                 <% if (logo && logo.text) { %>
                     <%= logo.text %>
                 <% } else { %>
-                    <img src="<%- url_for(logo) %>" alt="<%= title %>" height="28">
+                    <img class="logo-img" src="<%- url_for(logo) %>" alt="<%= title %>" height="28" />
+                    <img class="logo-img-dark" src="/images/logo-dark.png" alt="<%= title %>" height="28" />
                 <% } %>
                 </a>
                 <p class="is-size-7">
