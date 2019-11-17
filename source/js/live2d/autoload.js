@@ -1,7 +1,21 @@
 try {
     if ($(window).width() > 768) {
         $("<link>").attr({href: "/css/live2d/waifu.css", rel: "stylesheet", type: "text/css"}).appendTo('head');
-        $('body').append('<div class="waifu"><div class="waifu-tips"></div><canvas id="live2d" class="live2d"></canvas><div class="waifu-tool"><span class="fui-home"></span> <span class="fui-chat"></span> <span class="fui-eye"></span> <span class="fui-user"></span> <span class="fui-photo"></span> <span class="fui-info-circle"></span> <span class="fui-cross"></span></div></div>');
+        $('body').append(
+            '<div class="waifu">' +
+                '<div class="waifu-tips"></div>' +
+                '<canvas id="live2d" class="live2d"></canvas>' +
+                '<div class="waifu-tool">' +
+                    '<span class="fui-home"></span> ' +
+                    '<span class="fui-chat"></span>' +
+                    '<span class="fui-gear"></span>' +
+                    '<span class="fui-heart"></span> ' +
+                    '<span class="fui-photo"></span>' +
+                    '<span class="fui-info-circle"></span>' +
+                    '<span class="fui-cross"></span>' +
+                '</div>' +
+            '</div>'
+        );
         $.ajax({url: "/js/live2d/waifu-tips.js", dataType:"script", cache: true, success: function() {
             $.ajax({url: "/js/live2d/live2d.js", dataType:"script", cache: true, success: function() {
                 // 后端接口
@@ -16,6 +30,7 @@ try {
                 live2d_settings['canTurnToAboutPage'] = false; // 显示 跳转关于页  按钮，可选 true(真), false(假)
 
                 //看板娘样式设置
+                live2d_settings['waifuSize'] = '280x260'; // 看板娘大小，例如 '280x250', '600x535'
                 live2d_settings['waifuTipsSize'] = '230x75'; // 提示框大小，例如 '250x70', '570x150'
                 live2d_settings['waifuFontSize'] = '16px'; // 提示框字体，例如 '12px', '30px'
                 live2d_settings['waifuToolFont'] = '16px'; // 工具栏字体，例如 '14px', '36px'

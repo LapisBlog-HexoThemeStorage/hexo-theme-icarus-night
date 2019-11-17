@@ -175,8 +175,8 @@ function initModel(waifuPath, type) {
     
     if (!live2d_settings.showToolMenu) $('.waifu-tool').hide();
     if (!live2d_settings.canCloseLive2d) $('.waifu-tool .fui-cross').hide();
-    if (!live2d_settings.canSwitchModel) $('.waifu-tool .fui-eye').hide();
-    if (!live2d_settings.canSwitchTextures) $('.waifu-tool .fui-user').hide();
+    if (!live2d_settings.canSwitchModel) $('.waifu-tool .fui-gear').hide();
+    if (!live2d_settings.canSwitchTextures) $('.waifu-tool .fui-heart').hide();
     if (!live2d_settings.canSwitchHitokoto) $('.waifu-tool .fui-chat').hide();
     if (!live2d_settings.canTakeScreenshot) $('.waifu-tool .fui-photo').hide();
     if (!live2d_settings.canTurnToHomePage) $('.waifu-tool .fui-home').hide();
@@ -400,7 +400,7 @@ function loadTipsMessage(result) {
     	}
     }
     
-    $('.waifu-tool .fui-eye').click(function (){loadOtherModel()});
-    $('.waifu-tool .fui-user').click(function (){loadRandTextures()});
+    $('.waifu-tool .fui-gear').click(function (){loadOtherModel()});
+    $('.waifu-tool .fui-heart').click(function (){loadRandTextures()});
     $('.waifu-tool .fui-chat').click(function (){showHitokoto()});
 }
