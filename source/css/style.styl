@@ -501,7 +501,7 @@ body:before
         background-image: url("https://api.btstu.cn/sjbz/?lx=dongman&format=images&method=mobile")
 
 // Nav bar fixes
-.navbar, .footer
+.navbar
     background-color: rgba(255,255,255,0.8)
     backdrop-filter: blur(10px)
     -webkit-backdrop-filter: blur(10px)
@@ -544,6 +544,21 @@ body:before
         overflow: auto
 
 // Footer fixes
+.footer
+    // footer does not support background color
+    background-color: transparent
+    backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(255,255,255,0.8)
+
 .footer-logo
     img
         max-height: 2rem
@@ -677,13 +692,18 @@ body.night
         &:hover
             color: #ffffff
             background-color: dark-primary-color
-    .navbar, .footer, .card
-        transition: background-color 0.5s ease
+    .navbar,
+    .card
         background-color: rgba(40,44,52,0.5)
-        backdrop-filter: blur(0px) // 如果设置成 none，footer 的背景会莫名其妙地不生效
-        -webkit-backdrop-filter: blur(0px)
+        backdrop-filter: none
+        -webkit-backdrop-filter: none
         &:hover
             background-color: rgba(40,44,52,0.8)
+    .footer
+        backdrop-filter: none
+        -webkit-backdrop-filter: none
+        &:before
+            background-color: rgba(40,44,52,0.5)
 
     // input
     .input, .textarea
