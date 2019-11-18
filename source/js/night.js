@@ -4,34 +4,21 @@
  */ 
 var isNight = localStorage.getItem('night');
 var nightNav;
-var nightIcon;
 
 function applyNight(value) {
-    if (value) {
+    if (value.toString() === 'true') {
         document.body.className += ' night'
-        if (nightIcon) {
-            nightIcon.className = nightIcon.className.replace(/ fa-moon/g, '') + ' fa-lightbulb'
-        }
     } else {
         document.body.className = document.body.className.replace(/ night/g, '')
-        if (nightIcon) {
-            nightIcon.className = nightIcon.className.replace(/ fa-lightbulb/g, '') + ' fa-moon'
-        }
     }
 }
 
-function findNightIcon() {
+function findNightNav() {
     nightNav = document.getElementById('night-nav');
-    nightIcon = document.getElementById('night-icon');
-    if (!nightNav || !nightIcon) {
-        setTimeout(findNightIcon, 100);
+    if (!nightNav) {
+        setTimeout(findNightNav, 100);
     } else {
         nightNav.addEventListener('click', switchNight);
-        if (isNight) {
-            nightIcon.className = nightIcon.className.replace(/ fa-moon/g, '') + ' fa-lightbulb'
-        } else {
-            nightIcon.className = nightIcon.className.replace(/ fa-lightbulb/g, '') + ' fa-moon'
-        }
     }
 }
 
@@ -41,5 +28,5 @@ function switchNight() {
     localStorage.setItem('night', isNight);
 }
 
-findNightIcon();
+findNightNav();
 applyNight(isNight);

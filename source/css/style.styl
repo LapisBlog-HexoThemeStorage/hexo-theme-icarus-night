@@ -607,6 +607,12 @@ a
     background-color: primary-color
     border-color: primary-color-active
 
+// Fix fontawsome icon 不等宽
+.navbar-main .navbar-menu .navbar-end .navbar-item
+    width 35px
+    justify-content: center
+    -webkit-justify-content: center
+
 /* ---------------------------------
 *            night mode
 * --------------------------------- */
@@ -624,9 +630,16 @@ dark-font-color = #c0c0c0
     .logo-img-dark
         display: none
 
+body.night
+    background-color: #212750
+
 .night
     // code highlight
     .hljs{display:block;overflow-x:auto;padding:0.5em;color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-keyword,.hljs-formula{color:#c678dd}.hljs-section,.hljs-name,.hljs-selector-tag,.hljs-deletion,.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-string,.hljs-regexp,.hljs-addition,.hljs-attribute,.hljs-meta-string{color:#98c379}.hljs-built_in,.hljs-class .hljs-title{color:#e6c07b}.hljs-attr,.hljs-variable,.hljs-template-variable,.hljs-type,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-number{color:#d19a66}.hljs-symbol,.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-title{color:#61aeee}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}
+
+    // night icon
+    #night-nav #night-icon:before
+        content: '\f0eb'
 
     // global background
     #universe
@@ -644,7 +657,7 @@ dark-font-color = #c0c0c0
         pointer-events: none
 
     // global image
-    img, video, .waifu, .donate
+    img, video, iframe, .waifu, .donate
         filter: brightness(0.8)
 
     // logo
@@ -712,6 +725,11 @@ dark-font-color = #c0c0c0
             background-color: dark-primary-color-hover
         &:active
             background-color: dark-primary-color-active
+    .v .vlist .vcard .vhead .vsys
+        background-color: dark-primary-color
+    .v a:hover,
+    .v .vlist .vcard .vh .vmeta .vat
+        color #ffffff
 
     // font color
     body,
@@ -761,6 +779,19 @@ dark-font-color = #c0c0c0
         background-color dark-primary-color
     .menu-list li ul
         border-left 1px solid dark-primary-color
+
+    // qupte
+    .content blockquote
+        background-color dark-primary-color
+        border-color dark-primary-color-hover
+
+    // table
+    .content table thead td,
+    .content table thead th
+        color dark-font-color
+    .content table td,
+    .content table th
+        border-color dark-primary-color-hover
 
     // search box
     .searchbox
