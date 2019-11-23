@@ -28,7 +28,6 @@ try {
 
                 // 工具栏设置
                 live2d_settings['canTurnToHomePage'] = false; // 显示 返回首页    按钮，可选 true(真), false(假)
-                live2d_settings['canTurnToAboutPage'] = false; // 显示 跳转关于页  按钮，可选 true(真), false(假)
 
                 //看板娘样式设置
                 live2d_settings['waifuSize'] = '280x260'; // 看板娘大小，例如 '280x250', '600x535'
@@ -40,6 +39,7 @@ try {
 
                 // 其他杂项设置
                 live2d_settings['homePageUrl'] = 'https://www.imaegoo.com'; // 主页地址，可选 'auto'(自动), '{URL 网址}'
+                live2d_settings['aboutPageUrl'] = 'https://www.imaegoo.com/about/'; // 关于页地址, '{URL 网址}'
                 initModel("/js/live2d/waifu-tips.json");
             }});
         }});

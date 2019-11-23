@@ -756,6 +756,9 @@ body.night
         background: linear-gradient(180deg,rgba(37,41,54,0),rgba(37,41,54,1))
     .v .vlist .vcard .vcontent.expand:after
         background: rgba(37,41,54,1)
+    .v .vlist .vcard .vh,
+    .v .vlist .vcard .vquote
+        border-color: dark-primary-color-hover
 
     // font color
     body,
@@ -852,3 +855,7 @@ body.night
     ::-moz-selection
         color: white
         background-color: rgba(52,109,167,0.8)
+
+    input:-webkit-autofill
+        -webkit-text-fill-color: dark-font-color !important
+        box-shadow: 0 0 0px 1000px dark-primary-color inset

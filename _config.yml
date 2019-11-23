@@ -220,7 +220,7 @@ plugins:
         # Hotjar site id
         site_id: 
     # Show a loading progress bar at top of the page
-    progressbar: true
+    progressbar: false
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
     busuanzi: true
