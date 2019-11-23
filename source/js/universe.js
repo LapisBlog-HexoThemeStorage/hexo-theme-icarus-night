@@ -63,7 +63,6 @@
             star.fadeOut();
             star.draw();
         }
-        window.requestAnimationFrame(draw);
     }
 
     function Star() {
@@ -142,4 +141,15 @@
     function getRandInterval(min, max) {
         return (Math.random() * (max - min) + min);
     }
+
+    /* ---------------------------------
+     *        www.imaegoo.com
+     *     NO DRAW IN LIGHT MODE
+     * --------------------------------- */
+    (function imaegoo () {
+        if (document.body.classList.contains('night')) {
+            draw();
+        }
+        window.requestAnimationFrame(imaegoo);
+    })();
 }());

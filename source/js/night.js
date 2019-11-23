@@ -7,9 +7,9 @@ var nightNav;
 
 function applyNight(value) {
     if (value.toString() === 'true') {
-        document.body.className += ' night'
+        document.body.classList.add('night');
     } else {
-        document.body.className = document.body.className.replace(/ night/g, '')
+        document.body.classList.remove('night');
     }
 }
 
