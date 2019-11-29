@@ -78,7 +78,7 @@ comment:
     app_key: UYpzui8LMDUfgkyvizKxLwS7           # (required) LeanCloud application key
     notify: false                               # (optional) receive email notification
     verify: false                               # (optional) show verification code
-    placeholder: Comment                        # (optional) comment box placeholder text
+    placeholder: How do you think?              # (optional) comment box placeholder text
 # Donation entries
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 donate:

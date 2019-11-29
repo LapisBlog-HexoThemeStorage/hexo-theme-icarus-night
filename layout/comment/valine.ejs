@@ -10,6 +10,8 @@
 <script>
     new Valine({
         el: '#valine-thread' ,
+        lang: 'en',
+        recordIP: true,
         notify: <%= get_config('comment.notify') %>,
         verify: <%= get_config('comment.verify') %>,
         app_id: '<%= get_config('comment.app_id') %>',
