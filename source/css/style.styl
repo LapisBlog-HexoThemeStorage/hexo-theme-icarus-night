@@ -538,6 +538,7 @@ body.night
             color: #ffffff
             background-color: dark-primary-color
     .navbar,
+    .navbar-menu,
     .card
         background-color: rgba(40,44,52,0.5)
         backdrop-filter: none
@@ -642,6 +643,11 @@ body.night
         background-color: dark-primary-color
         border-color: dark-primary-color-hover
 
+    // pre
+    .content pre
+        background-color: dark-primary-color
+        border-color: dark-primary-color-hover
+
     // table
     .content table thead td,
     .content table thead th
@@ -705,3 +711,66 @@ body.night
     input:-webkit-autofill
         -webkit-text-fill-color: dark-font-color !important
         box-shadow: 0 0 0px 1000px dark-primary-color inset
+
+
+
+// code from Kinetic27
+/* ---------------------------------
+ *           Code Boxs
+ * --------------------------------- */
+ //usage : <div style="callout:(원하는거)">content</div>
+div[style^='callout:']
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 6px !important;
+    border-radius: 3px;
+
+div[style^='callout:'] h4
+    margin-top: 0;
+    margin-bottom: 1em;
+
+div[style^='callout:'] p:last-child
+    margin-bottom: 0;
+
+div[style^='callout:'] code
+    border-radius: 3px;
+
+div[style^='callout:']+div[style^='callout:']
+    margin-top: -5px;
+
+div[style='callout:default']
+    border-left-color: #777 !important;
+
+div[style='callout:default'] h4
+    color: #777 !important;
+
+div[style='callout:primary']
+    border-left-color: #428bca !important;
+
+div[style='callout:primary'] h4
+    color: #428bca !important;
+
+div[style='callout:success']
+    border-left-color: #5cb85c !important;
+
+div[style='callout:success'] h4
+    color: #5cb85c !important;
+
+div[style='callout:danger']
+    border-left-color: #d9534f !important;
+
+div[style='callout:danger'] h4
+    color: #d9534f !important;
+
+div[style='callout:warning']
+    border-left-color: #f0ad4e !important;
+
+div[style^='callout:warning'] h4
+    color: #f0ad4e !important;
+
+div[style^='callout:info']
+    border-left-color: #5bc0de !important;
+
+div[style^='callout:info'] h4
+    color: #5bc0de !important;
